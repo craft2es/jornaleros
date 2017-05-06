@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Carlina Rivera.js</title>
+
+        <link rel="stylesheet" href="assets/css/reveal.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Passion+One" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="assets/css/Carlina.css">
+
+        <script src='assets/js/jquery.min.js'></script>
+        <script src='assets/js/TweenMax.min.js' type="text/javascript" charset="utf-8"></script>
+        <script src='assets/js/SplitText.min.js' type="text/javascript" charset="utf-8"></script>
+
+    </head>
+    <body>
+    <!--
+
+    Lista de tareas
+
+
+    ✅ 1. Titulo principal
+    2. Agregar audio
+    3.
+
+    -->
+        <div class="audio">
+            <audio id="entrevista" controls>
+              <source src="assets/audios/carlina_rivera.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="reveal">
+            <div class="slides">
+                <!-- 17681379071_7c51b8290e_k.jpg -->
+                    <section data-background-video="assets/videos/carlina3.mp4" data-background-video-loop class="background-content">
+                         <h1>Más que una latina</h1>
+                         <h3>La historia de Carlina Rivera. Candidata para el Consejo Municipal de Nueva York</h3>
+                         <a href="#" class="navigate-next" id="comenzar">Comenzar</a>
+                    </section>
+
+                    <section data-background-video="assets/videos/carlina1.mp4" class="background-content"> 
+
+                        <section><p><blockquote>"I am a product of this neighborhood, I´m a daughter of the district. I am a latino candidate but I´m more than that. I´m the most experience candidate."</blockquote></p></section>
+
+                    </section>
+  <section data-background-video="assets/videos/carlina2.mp4" class="background-content">
+
+
+                        <section><p><blockquote>"Ahora es bien sexy, bien chevere todo aquí, todo mundo quiere salir a hangear in the bars, y los restaurantes son muy deliciosos. Pero antes había una cultura de drogas y gente que estaba sufriendo mucho".</blockquote></p></section>
+
+                        <section><p><blockquote>"Cuando yo fui a las reuniones yo estaba mirando a las mesas, como la junta de la comunidad, pero no había ninguna persona ahi que es joven, que es latina. Entonces cuando yo apliqué para la junta de la comunidad".</blockquote></p></section>
+
+                            </section>           
+
+                <section data-background-video="assets/videos/carlina4.mp4" data-background-video-loop data-background-video-muted class="background-content">
+                    <h1 class ="fragment" data-audio-src="assets/audios/Carlina_Rivera.mp3">Escuchemos a Carlina Rivera
+                    </h1>
+                </section>
+
+                <!--
+                ###
+                Ejemplo de video de fondo
+                ###
+
+                <section data-background-video="assets/videos/Turntable - 8437.mp4" data-background-video-loop data-background-video-muted class="background-content">
+                    <h1>Hacking Reveal.js</h1>
+                    <h2>CUNY 2017</h2>
+                </section>
+
+                -->
+
+
+                <!--
+                ###
+                Ejemplo de video de Youtube Embebido
+                ###
+
+                <section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A1_QKF5Ge6U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </section>
+
+                 -->
+
+                <!--
+                ###
+                Ejemplo de audio de Soundcloud Embebido
+                ###
+                <section>
+                    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314757427&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                </section>
+                -->
+                <section data-background-image="assets/images/carlina.jpg" class="background-content">
+                    <h1>Carlina Rivera</h1>
+             <h3>La candidata latina, lider en un distrito 60% blanco</h3>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="assets/js/head.min.js"></script>
+        <script src="assets/js/reveal.js"></script>
+        <script src="assets/js/custom-theme-reveal.js"></script>
+
+        <script>
+            
+            $(document).ready(function() {
+
+
+
+                // Array para guardar el tiempo en el momento que cambiamos cada slide.
+                // Cada valor en el array esta expresado en segundos acumulados.
+                var tiempoTransicion = [15, 30, 64, 203, 109, 15, 30, 64, 203, 109];
+
+                // Posición del array tiempoTransicion
+                var marcaActual = 0;
+                // Selecciono el objeto de audio.
+                var entrevista = $('#entrevista');
+                // Extraigo la duración.
+                var duracion = entrevista.prop('duration');
+                // Extraigo la posición actual del audio.
+                var posicion = entrevista.prop('currentTime');
+
+                entrevista.controls = false;
+
+
+                // Inicio haciendo click en el botón comenzar, para darle "Play" al audio. El slide se ejecuta vía Reveal.js, class="navigate-next"
+                $('#comenzar').on('click', function() {
+                    entrevista.trigger('play');
+                });
+
+                // Listener o evento que detecta si hubo un cambio en slide.
+                Reveal.addEventListener( 'slidechanged', function(event, setTime) {
+
+                    // Si accidentalmente me cambio de slide sin usar el botón comenzar, entonces ejecuto el audio.
+
+                    // Caso contrario, pongo el audio en pausa y lo vuelvo a cero.
+
+                    if (Reveal.getState().indexh === 0) {
+                        entrevista.trigger('pause');
+                        entrevista.prop('currentTime',0);
+                    } else {
+                        entrevista.trigger('play');
+                    }
+
+                });
+
+
+
+                // Función para ejecutar siguiende slide.
+                function cambiarSlide() {
+                    Reveal.next();
+                    marcaActual += 1;
+                }
+
+                // Listener o evento que extrae el tiempo actual del audio.
+                // Sin función actualmente.
+                entrevista.on('timeupdate', function() {
+
+                    console.log(posicion);
+
+                    posicion = entrevista.prop('currentTime');
+                    if (posicion > 0 && posicion >= tiempoTransicion[marcaActual]) {
+                        cambiarSlide();
+                    }
+                });
+
+
+
+            });
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: false,
+                controls: false,
+                center: true,
+                progress: false,
+                width: "100%",
+                height: "100%"
+            });
+
+        </script>
+    </body>
+</html>
