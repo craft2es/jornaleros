@@ -3,6 +3,8 @@ body {
 }
 
 /* TIPOGRAFIA */
+/* Pendientes: 
+"Darle calidez a la página, que se vuelva orgánico" */
 
 h1 {
 	font-family: helvetica;
@@ -12,6 +14,10 @@ h2 {
 	font-family: helvetica;
 }
 
+h3 {
+	font-family: helvetica;
+	color: #fff;
+}
 figcaption {
 	font-family: helvetica;
 	font-size: 16px;
@@ -28,7 +34,7 @@ que salga la parte de abajo de la imagen */
 	position: absolute;
 	top: 0;
 	left: 0;
-	min-height: 680px; 
+	min-height: auto; 
 	/* min-height: 100%; */
 	width: 100%;
 /* 	max-width: 1024px; */
@@ -41,43 +47,64 @@ que salga la parte de abajo de la imagen */
 	width: 1300px;
 }
 
+/* nunca justificar texto */
+
 .headline {
 	position: relative;
 	background: transparent;
 	height: 100vh;
 	/* border: 15px; */
 	border-color: blue;
-	padding-top: 250px;
+	padding-top: 150px;
 	padding-left: 50px;
 	/* max-width: 800px; */
 }
 
 .headline h1{
-	max-width: 504px;
-	background: #fff;
-	display: inline;
+	min-width: 504px;
+/* 	background: #fff;
+display: inline; */
+ 	text-align: center;
 /* 	position: relative;
  */	z-index: 999;
+	color: #fff/*  rgb(195, 180, 161) */;
 	font-size: 4.222em;
-	margin-right: 300px; 
-	margin-left: 0px;
+	margin-right: auto; 
+	margin-left: auto;
+	margin-bottom: 5px;
+	font-weight: bolder;
+	/* object-position: center; */
 	/* margin-bottom: 300px; */
-	box-shadow: 2px 2px 3px black;
+	/* box-shadow: 2px 2px 3px black; */
+	text-shadow: 1px 1px 2px black; 
+
 }
 .headline h2{
 	max-width: 714px;
-	background: #fff;
+/* 	background: #fff;
 	display: inline-block;
-	/* z-index: 999; */
+	z-index: 999; */
+	text-align: center;
 	font-size: 1.522em;
-	margin-right: 300px; 
-	margin-left: 0px;
-	margin-top: 3px;
-	box-shadow: 2px 2px 3px black;
+	margin-right: auto; 
+	margin-left: auto;
+	margin-top: 5px;
+	font-weight: lighter;
+	padding-top: 8px;
+	color: #fff;
+	text-shadow: 1px 1px 2px black; 
+	/* box-shadow: 2px 2px 3px black; */
 
 	/* margin-bottom: 300px; */
 }
 
+.headline h3 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-shadow: 1px 1px 2px black; 
+
+}
 
 .cuerpo h1{
 	max-width: 640px;
@@ -93,7 +120,7 @@ que salga la parte de abajo de la imagen */
 .cuerpo p{
 	max-width: 640px;
 	font-size: 21px;
-	text-align: justify;
+	text-align: left;
 	margin-left: 320px;
 	margin-right: 220px;
 	margin-bottom: 0px;
@@ -156,6 +183,9 @@ que salga la parte de abajo de la imagen */
 
 .imagenbreak {
 	margin-top: 10px;
+	max-width: 1040px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
