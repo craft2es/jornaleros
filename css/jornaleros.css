@@ -1,0 +1,122 @@
+body {
+
+}
+
+h1 {
+	font-family: helvetica;
+}
+
+h2 {
+	font-family: helvetica;
+}
+/* Preguntar como hacer para
+que salga la parte de abajo de la imagen */
+.headline img {
+	position: fixed !important; 
+ 	/* max-width: 99%; */
+ 	z-index: -999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 680px; 
+	/* min-height: 100%; */
+	width: 100%;
+/* 	max-width: 1024px; */
+	width: 100%;
+	
+
+}
+
+.headline {
+	position: relative;
+	background: transparent;
+	height: 100vh;
+	/* border: 15px; */
+	border-color: blue;
+	padding-top: 250px;
+	padding-left: 50px;
+	/* max-width: 800px; */
+}
+
+.headline h1{
+	max-width: 504px;
+	background: #fff;
+	display: inline;
+/* 	position: relative;
+ */	z-index: 999;
+	font-size: 4.222em;
+	margin-right: 300px; 
+	margin-left: 0px;
+	/* margin-bottom: 300px; */
+}
+.headline h2{
+	max-width: 514px;
+	background: #fff;
+	display: inline-block;
+	/* z-index: 999; */
+	font-size: 1.222em;
+	margin-right: 300px; 
+	margin-left: 0px;
+	margin-top: 3px;
+	/* margin-bottom: 300px; */
+}
+
+.cuerpo h1{
+	max-width: 640px;
+	font-size: 1.22em;
+	margin-left: 320px;
+	margin-right: 220px;
+	font-weight: normal;
+}
+
+#header {
+	font-size: 2.7em;
+}
+.cuerpo p{
+/* 	max-width: 640px; */
+	font-size: 1.3em;
+	text-align: justify;
+	margin-left: 320px;
+	margin-right: 220px;
+	margin-bottom: 0px;
+	font-family: verdana;
+}
+
+.cuerpo span {
+	font-family: verdana;
+}
+
+
+
+.cuerpo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.imagen {
+	padding-bottom: 200px;
+}
+.imagen img{
+	z-index: -50;
+}
+
+.imagen h2 {
+	max-width: 514px;
+	background: #fff;
+	display: inline-block;
+	z-index: 999;
+	float: left; 
+	font-size: 2.222em;
+	margin-right: 300px; 
+	margin-left: 40px;
+	margin-top: 3px;
+	margin-bottom: 300px;
+}
+
+section {
+	background: #fff;
+
+	/* height: 100vh; */
+	border: 100px blue;
+}
+
