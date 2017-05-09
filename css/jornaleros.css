@@ -2,12 +2,20 @@ body {
 
 }
 
+/* TIPOGRAFIA */
+
 h1 {
 	font-family: helvetica;
 }
 
 h2 {
 	font-family: helvetica;
+}
+
+figcaption {
+	font-family: helvetica;
+	font-size: 1.0em;
+	padding-top: 15px;
 }
 /* Preguntar como hacer para
 que salga la parte de abajo de la imagen */
@@ -23,8 +31,12 @@ que salga la parte de abajo de la imagen */
 	width: 100%;
 /* 	max-width: 1024px; */
 	width: 100%;
-	
+}
 
+.parrafo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 1300px;
 }
 
 .headline {
@@ -50,16 +62,17 @@ que salga la parte de abajo de la imagen */
 	/* margin-bottom: 300px; */
 }
 .headline h2{
-	max-width: 514px;
+	max-width: 714px;
 	background: #fff;
 	display: inline-block;
 	/* z-index: 999; */
-	font-size: 1.222em;
+	font-size: 1.522em;
 	margin-right: 300px; 
 	margin-left: 0px;
 	margin-top: 3px;
 	/* margin-bottom: 300px; */
 }
+
 
 .cuerpo h1{
 	max-width: 640px;
@@ -73,45 +86,39 @@ que salga la parte de abajo de la imagen */
 	font-size: 2.7em;
 }
 .cuerpo p{
-/* 	max-width: 640px; */
-	font-size: 1.3em;
+	max-width: 640px;
+	font-size: 21px;
 	text-align: justify;
 	margin-left: 320px;
 	margin-right: 220px;
 	margin-bottom: 0px;
-	font-family: verdana;
+	font-family: times;
 }
 
 .cuerpo span {
 	font-family: verdana;
 }
 
-
-
 .cuerpo {
 	padding-top: 20px;
 	padding-bottom: 20px;
-}
+	width: 1300px;
 
+}
+/* Problemas haciendo que esto flote */
 .imagen {
-	padding-bottom: 200px;
-}
-.imagen img{
-	z-index: -50;
+	max-width: 1040px;
+	height: auto;
+	display: block;
+/* 	margin: auto;
+ */    /* width: 50%; */
+   /*  border: 3px solid green; */
+  	padding: 20px, 20px, 0px, 20px;
+    margin-left: auto;
+    margin-right: auto;
+ /*    margin-right: 40px; */
 }
 
-.imagen h2 {
-	max-width: 514px;
-	background: #fff;
-	display: inline-block;
-	z-index: 999;
-	float: left; 
-	font-size: 2.222em;
-	margin-right: 300px; 
-	margin-left: 40px;
-	margin-top: 3px;
-	margin-bottom: 300px;
-}
 
 section {
 	background: #fff;
