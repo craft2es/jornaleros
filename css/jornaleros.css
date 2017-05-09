@@ -14,8 +14,10 @@ h2 {
 
 figcaption {
 	font-family: helvetica;
-	font-size: 1.0em;
+	font-size: 16px;
 	padding-top: 15px;
+	/* width: 800px; */
+	align-items: left;
 }
 /* Preguntar como hacer para
 que salga la parte de abajo de la imagen */
