@@ -136,8 +136,7 @@ display: inline; */
 	padding-bottom: 20px;
 	padding-left: 0px;
 	margin-left: 0px;
-	width: 1300px;
-	display: 
+	max-width: 1300px;
 }
 /* Problemas haciendo que esto flote */
 .imagen {
@@ -194,6 +193,7 @@ display: inline; */
 
 section {
 	background: #fff;
+	
 
 	/* height: 100vh; */
 	/* border: 100px blue; */
