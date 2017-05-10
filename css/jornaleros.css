@@ -24,6 +24,8 @@ figcaption {
 	padding-top: 10px;
 	/* width: 800px; */
 	align-items: left;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* Preguntar como hacer para
 que salga la parte de abajo de la imagen */
@@ -106,6 +108,14 @@ display: inline; */
 
 }
 
+.cuerpo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	margin-left: 0px;
+	max-width: 1300px;
+}
+
 .cuerpo h1{
 	max-width: 640px;
 	font-size: 1.22em;
@@ -121,8 +131,8 @@ display: inline; */
 	max-width: 640px;
 	font-size: 1.313rem;
 	text-align: left;
-	margin-left: 320px;
-	margin-right: 220px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 0px;
 	font-family: times;
 }
@@ -131,16 +141,10 @@ display: inline; */
 	font-family: verdana;
 }
 
-.cuerpo {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 0px;
-	margin-left: 0px;
-	max-width: 1300px;
-}
+
 /* Problemas haciendo que esto flote */
 .imagen {
-	max-width: 1040px;
+	max-width: 80%;
 	height: auto;
 	display: block;
 /* 	margin: auto;
@@ -154,6 +158,17 @@ display: inline; */
  }
  */
 
+/* .imagen figcaption{
+	max-width: 80%;
+	height: auto;
+	display: block;
+/* 	margin: auto;
+ */    /* width: 50%; */
+ /*    border: 3px solid green; */
+  	/* padding: 20px, 20px, 0px, 20px; */
+   /*  margin-left: auto;
+    margin-right: auto; */
+   /* } */ 
 
 /* .dosimgh {
 	display: inline-block;
@@ -170,26 +185,30 @@ display: inline; */
     position: relative;
     margin: 1%;
     /* float: left; */
-    max-width: 490px;
+    max-width: 47%;
+    min-width: 30%;
     height: auto;
  /*    margin-right: 40px; */
 }
 
 .imgbreak {
-	margin-top: 20px;
-	/* margin-bottom: 20px; */
-	max-width: 1290px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 
 }
 
-.imagenbreak {
+/* .imagenbreak {
 	margin-top: 10px;
-	max-width: 1040px;
+	max-width: 100%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+ */
 
 section {
 	background: #fff;
