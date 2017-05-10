@@ -20,7 +20,7 @@ h3 {
 }
 figcaption {
 	font-family: helvetica;
-	font-size: 16px;
+	font-size: 1rem;
 	padding-top: 10px;
 	/* width: 800px; */
 	align-items: left;
@@ -119,7 +119,7 @@ display: inline; */
 }
 .cuerpo p{
 	max-width: 640px;
-	font-size: 21px;
+	font-size: 1.313rem;
 	text-align: left;
 	margin-left: 320px;
 	margin-right: 220px;
@@ -134,8 +134,10 @@ display: inline; */
 .cuerpo {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 0px;
+	margin-left: 0px;
 	width: 1300px;
-
+	display: 
 }
 /* Problemas haciendo que esto flote */
 .imagen {
@@ -184,6 +186,7 @@ display: inline; */
 .imagenbreak {
 	margin-top: 10px;
 	max-width: 1040px;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -193,6 +196,6 @@ section {
 	background: #fff;
 
 	/* height: 100vh; */
-	border: 100px blue;
+	/* border: 100px blue; */
 }
 
