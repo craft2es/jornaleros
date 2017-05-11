@@ -1,5 +1,5 @@
 body {
-
+background-color: #000;
 }
 
 /* TIPOGRAFIA */
@@ -54,7 +54,7 @@ que salga la parte de abajo de la imagen */
 .headline {
 	position: relative;
 	background: transparent;
-	height: 100vh;
+	height: 500px;
 	/* border: 15px; */
 	border-color: blue;
 	padding-top: 150px;
@@ -69,7 +69,7 @@ display: inline; */
  	text-align: center;
 /* 	position: relative;
  */	z-index: 999;
-	color: #000/*  rgb(195, 180, 161) */;
+	color: #808080/*  rgb(195, 180, 161) */;
 	font-size: 4.222em;
 	margin-right: auto; 
 	margin-left: auto;
@@ -93,7 +93,7 @@ display: inline; */
 	margin-top: 5px;
 	font-weight: lighter;
 	padding-top: 8px;
-	color: #fff;
+	color: #808080;
 	text-shadow: 1px 1px 2px black; 
 	/* box-shadow: 2px 2px 3px black; */
 
@@ -112,6 +112,8 @@ display: inline; */
 	align-items: center;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: TBD;
+
 }
 
 .cuerpo {
@@ -224,3 +226,11 @@ section {
 	/* border: 100px blue; */
 }
 
+.video {
+	max-width: %;
+	max-height: auto;
+	z-index: 999;
+	margin-left: auto;
+	margin-right: auto;
+	display: block
+}
