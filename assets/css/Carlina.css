@@ -26,12 +26,14 @@
   font-family: Helvetica !important;
   letter-spacing: -1.2em;
   text-align: left;
-  line-height: 1.055em !important; }
+  line-height: 1.055em !important;
+  text-shadow: 1px 1px 2px black; }
 
 h1 div:first-child {
   color: white !important;
  /*  background-color: #1b4a63 !important; */
   padding: 10px; 
+  text-shadow: 1px 1px 2px black;
   }
 
 [data-state="hacer"] h1, [data-state="hacer"] h2 {
@@ -52,6 +54,7 @@ h2 {
   text-align: left;
   line-height: 1.055em !important;
   padding-top: 20px;
+  text-shadow: 1px 1px 2px black;
   color:white;}
 
 h3 {
@@ -119,6 +122,7 @@ body {
   display: inline-block;
   text-align: center;
   font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
   /* background-color: rgba(0,0,0,0.2); */
   /* padding: 50px; */
 }
