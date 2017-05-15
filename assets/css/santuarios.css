@@ -228,6 +228,40 @@ section {
 	/* border: 100px blue; */
 }
 
+.cita {
+	max-width: 640px;
+	max-height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/* border-color: black;
+	border: 10px; */
+}
+
+.cita img{
+	max-width: 640px;
+	max-height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cita p {
+	font-size: 1.522em;
+	font-style: italic;
+	max-width: 500px;
+}
+
+.cita h4 {
+	font-size: 1.522em;
+	font-style: oblique;
+	max-width: 500px;
+	text-align: right;
+	margin-bottom: 0;
+}
+
 .video {
 	max-width: %;
 	max-height: auto;
