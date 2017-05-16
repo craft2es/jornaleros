@@ -1,4 +1,5 @@
 body {
+background-image: linear-gradient(#E5E5E3, #193441);
 background-color:  #E5E5E3;
 }
 
@@ -70,7 +71,7 @@ display: inline; */
  	text-align: center;
 /* 	position: relative;
  */	z-index: 999;
-	color: #808080/*  rgb(195, 180, 161) */;
+	color: #FBFDFF/*  rgb(195, 180, 161) */;
 	font-size: 4.222em;
 	margin-right: auto; 
 	margin-left: auto;
@@ -249,9 +250,10 @@ section {
 }
 
 .cita p {
-	font-size: 1.522em;
+	font-size: 1.822em;
 	font-style: italic;
 	max-width: 500px;
+	text-align: center;
 }
 
 .cita h4 {

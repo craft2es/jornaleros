@@ -1,6 +1,12 @@
 body {
-
+margin: 0, 0, 0, 0;
 }
+
+
+
+/* Global Styles */
+
+
 
 /* TIPOGRAFIA */
 /* Pendientes: 
@@ -28,46 +34,32 @@ figcaption {
 	margin-left: auto;
 	margin-right: auto;
 }
-/* Preguntar como hacer para
-que salga la parte de abajo de la imagen */
-.headline img {
-	position: fixed !important; 
- 	/* max-width: 99%; */
- 	z-index: -999;
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-height: auto; 
-	min-height: 100%;
-	/* width: 100%; */
-/* 	max-width: 1024px; */
-	/* width: 100%; */
-	/* display: block;
-  	width: 100%; */
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-attachment:  fixed;
-}
-
-/* .parrafo {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	width: 1300px;
-} */
-
-/* nunca justificar texto */
 
 .headline {
-	position: relative;
+/* 	position: relative; */
 	background: transparent;
 	height: 100vh;
-	/* border: 15px; */
-	border-color: blue;
-	padding-top: 150px;
-	padding-left: 50px;
-	/* max-width: 800px; */
+	/* padding-top: 150px;
+	padding-left: 50px;/ */
 }
+
+.headline img {  
+/* 	background-size: cover; */
+	/* left: 0; */
+ 	z-index: -1;
+	top: 0;
+  	height: auto;
+  	max-width: 100%;
+  	position: fixed;
+/*   	width: 100%; */
+/*   	background-position: absolute; */
+/*   	background-attachment: fixed; 
+  	background-position: center top; */
+  /* 	position: fixed !important; */
+/*   	background-attachment: fixed; */
+
+ 
+} 
 
 .headline h1{
 	min-width: 504px;
@@ -80,6 +72,7 @@ display: inline; */
 	font-size: 4.222em;
 	margin-right: auto; 
 	margin-left: auto;
+	margin-top: 200px;
 	margin-bottom: 5px;
 	font-weight: bolder;
 	/* object-position: center; */
@@ -118,9 +111,11 @@ display: inline; */
 .cuerpo {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	left: 0 !important;
-	right: 0, !important;
-	width: 100%;
+	position: relative;
+	background: #fff;
+	/* left: 0 !important;
+	right: 0, !important; */
+	/* width: 100%; */
 }
 
 .cuerpo h1{
@@ -279,10 +274,9 @@ QUOTES
  */
 
 section {
-	background: #fff;
+/* 	background: #fff; */
+    display: block;
+}
 	
 
-	/* height: 100vh; */
-	/* border: 100px blue; */
-}
 
