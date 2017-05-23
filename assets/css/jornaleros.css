@@ -35,6 +35,23 @@ figcaption {
 	margin-right: auto;
 }
 
+footer {
+	align-items: left;
+	margin-left: 5px;
+	font-size: 1rem;
+	display: block;
+	color: #ffffff;
+	background-color: #193441;
+	padding: 1.3rem;
+}
+
+.footerimg {
+	font-size: 1.822em;
+	font-style: italic;
+	max-width: 500px;
+	float: center;
+}
+
 .headline {
 /* 	position: relative; */
 	background: transparent;
