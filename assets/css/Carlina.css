@@ -6,19 +6,21 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
+/**
+.texto {
+  text-align: right
+  text-color:yellow;
+} */
 
 .reveal h1,
+
+
 .reveal h2,
 .reveal h3,
 .reveal h4, h1
 .reveal h5,
-.reveal h6 {
-  margin: 0 0 20px 0;
-  color: #1b4a63;
-  line-height: 0.8em;
-  letter-spacing: -0.002em;
- /*  text-shadow: none; 
-  */ text-shadow: 1px 1px 2px black; }
+.reveal h6,
+
 
 .reveal h1 {
   max-width: 750px;
@@ -27,10 +29,25 @@
   letter-spacing: -1.2em;
   text-align: left;
   line-height: 1.055em !important;
-  text-shadow: 1px 1px 2px black; }
+  text-shadow: 1px 1px 2px black;
+  color: white;
+  text-shadow: 1px 1px 2px black!important}
+
+.reveal h2 {
+    font-size: 2rem !important;
+}
+
+
+.reveal h3 {
+    font-size: 1.3rem !important;
+      text-align: right !important
+        text-shadow: 1px 1px 2px black!important
+        padding-top:40px;
+
+}
 
 h1 div:first-child {
-  color: white !important;
+  color: white;
  /*  background-color: #1b4a63 !important; */
   padding: 10px; 
   text-shadow: 1px 1px 2px black;
@@ -58,12 +75,13 @@ h2 {
   color:white;}
 
 h3 {
-  max-width: 1000px;
-  font-size: 2rem !important;
+  max-width: 10px;
   text-align: left;
 
   font-family: "Helvetica", 
  }
+
+
 
 p {
   max-width: 900px;
@@ -117,6 +135,7 @@ body {
  }
 
 .reveal h1 {
+  color: white;
   font-size: 3.2em;
   line-height: 1em;
   display: inline-block;
